@@ -71,7 +71,7 @@ container = database.create_container_if_not_exists(container_definition, offer_
 
 @app.route('/')
 def index():
-    return render_template('login.html')
+    return render_template('index.html')
    
 
 
