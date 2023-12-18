@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+    <script src="{{ url_for('static', filename='login.js') }}"></script>
+    <title>Registration and Login</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tab" id="registrationTab">Registration</div>
+        
+
+        <div class="content" id="registrationContent">
+            <form id="registrationForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" required>
+                
+                <button type="button" onclick="register()">Register</button>
+            </form>
+        </div>
+       
+    
+
+        <br>
+        <div class="tab" id="loginTab">Login</div>
+        <div class="content" id="loginContent">
+            <form id="loginForm">
+                <label for="loginUsername">Username:</label>
+                <input type="text" id="loginUsername" required>
+                
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
